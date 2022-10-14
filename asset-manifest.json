@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ViachaslauVDmitruk/pero-travel/static/css/main.073c9b0a.css",
+    "main.js": "/ViachaslauVDmitruk/pero-travel/static/js/main.5bd85e5a.js",
+    "static/js/787.3cb99098.chunk.js": "/ViachaslauVDmitruk/pero-travel/static/js/787.3cb99098.chunk.js",
+    "static/media/logo.svg": "/ViachaslauVDmitruk/pero-travel/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ViachaslauVDmitruk/pero-travel/index.html",
+    "main.073c9b0a.css.map": "/ViachaslauVDmitruk/pero-travel/static/css/main.073c9b0a.css.map",
+    "main.5bd85e5a.js.map": "/ViachaslauVDmitruk/pero-travel/static/js/main.5bd85e5a.js.map",
+    "787.3cb99098.chunk.js.map": "/ViachaslauVDmitruk/pero-travel/static/js/787.3cb99098.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5bd85e5a.js"
+  ]
+}
