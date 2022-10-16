@@ -1,4 +1,4 @@
-name: Hello
+name: Let's go
 
 on: [push]
 
@@ -10,5 +10,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Hello
+      - name: Let's go
         run: echo "Hello, GitHub Actions!"
