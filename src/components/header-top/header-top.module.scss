@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  max-width: $wrapper;
+  padding: 0px 10px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.logoMain {
+}
+.navlinks {
+  display: flex;
+  color: $textColor;
+  font-family: $font-family-main;
+  & :hover {
+    color: yellow;
+    cursor: pointer;
+  }
+  & .link:not(:last-child) {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$wrapper: 1140px;
+.k {
+    font-family: 'Montserrat', sans-serif;
+}
+
+$font-family-main: 'Montserrat';
+
+$button: red;
+
+$textColor: #FFFFFF;
+
+$direction: 92.71deg;
+
+$fromColor: #0499DD 0%;
+$toColor: #17C1BC 100%;
+
+@mixin gradient() {
+    $direction: 92.71deg;
+    $fromColor: #0499DD ;
+    $toColor: #17C1BC;
+    background-image: linear-gradient($direction, $fromColor, $toColor);
+}

@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.header {
+text-align: center;
+position: relative;
+}
+.fullScreen {
+   img {
+    width: 100%
+}
+position: absolute;
+top:0;
+left: 0;
+z-index: -1;
+width: 100%;
+}
+.headerTop {
+display: flex;
+justify-content: space-between;
+max-width: $wrapper;
+padding: 0px 10px;
+margin: 0 auto;
+margin-top: 25px;
+}
