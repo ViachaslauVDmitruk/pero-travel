@@ -16,7 +16,9 @@ export const HeaderTop = ({ id, link }: NavLinsProps) => {
       </div>
       <div className={styles.navlinks}>
         {NAV_LINKS.map(({ id, link }) => (
-          <div className={styles.link}>{link}</div>
+          <div className={styles.link} key={id}>
+            {link}
+          </div>
         ))}
       </div>
     </div>
