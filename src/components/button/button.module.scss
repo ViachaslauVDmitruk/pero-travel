@@ -2,4 +2,16 @@
 
 .button {
   @include gradient();
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $textColor;
+  font-family: $font-family-main;
+  padding: 15px 50px;
+  align-self: flex-end;
+  img {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  border-radius: 24px;
 }

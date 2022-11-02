@@ -6,6 +6,12 @@ export const Button = ({
   buttonText,
   onClick,
   type = BUTTON_TYPES.BUTTON,
+  src,
 }: ButtonProps) => {
-  return <button className={styles.button}>{buttonText}</button>;
+  return (
+    <button className={styles.button}>
+      {buttonText}
+      <img src={src} alt="img" />
+    </button>
+  );
 };
