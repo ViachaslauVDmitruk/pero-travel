@@ -1,13 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
-$wrapper: 1140px;
-.k {
-  font-family: "Montserrat", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  border: none;
 }
 
-$font-family-main: "Montserrat";
+ul,
+li {
+  list-style-type: none;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-$button: red;
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+$wrapper: 1140px;
+
+$font-family-main: "Montserrat";
+$font-family-rearly: "Caveat";
 
 $textColor: #ffffff;
 
