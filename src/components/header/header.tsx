@@ -3,17 +3,33 @@ import { Button } from "../button";
 import { HeaderTop } from "../header-top";
 
 import mainImage from "./assets/main-image.jpg";
+import mainLaptope from "./assets/main-laptop.jpg";
 import arrow from "./assets/arrow.png";
 
 import styles from "./header.module.scss";
+import { useEffect } from "react";
 
 export const Header = () => {
+  useEffect(() => {
+    let width = window.screen.width;
+    console.log("width", width);
+  }, []);
+
+  console.log("width", window.screen.width);
+
   return (
-    <div>
-      <div className={styles.fullScreen}>
+    <div className={styles.header}>
+      {/* <div className={styles.fullScreen}>
         <img src={mainImage} alt="main" />
-      </div>
+      </div> */}
       <div className={styles.wrapper}>
+        <div className={styles.fullScreen}>
+          {window.screen.width >= 992 ? (
+            <img src={mainImage} alt="main" />
+          ) : (
+            <img src={mainLaptope} alt="main" />
+          )}
+        </div>
         <HeaderTop />
         <div className={styles.centerBlock}>
           <div className={styles.title}>

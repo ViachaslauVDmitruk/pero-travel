@@ -4,7 +4,11 @@
   @include wrapper();
 }
 
+.header {
+}
+
 .fullScreen {
+  position: relative;
   img {
     width: 100%;
   }
@@ -14,45 +18,71 @@
   z-index: -1;
   width: 100%;
 }
+
 .headerTop {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
 }
+
 .centerBlock {
   display: flex;
   justify-content: space-between;
   margin-top: 155px;
   margin-bottom: 75px;
+  @include desktop {
+    margin-top: 100px;
+    margin-bottom: 45px;
+  }
 }
+
 .title {
   color: $textColor;
   position: relative;
   text-align: left;
 }
+
 .firstWord {
   font-weight: 700;
   font-size: 72px;
   line-height: 88px;
   text-transform: uppercase;
+  @include laptop {
+    font-size: 48px;
+    line-height: 58px;
+  }
 }
+
 .secondWord {
   font-family: $font-family-rearly, cursive;
   font-size: 64px;
   color: #ffc700;
   position: absolute;
-  right: 25px;
+  right: 7%;
   top: 20%;
+  @include laptop {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @media screen and (max-width: 845px) {
+    right: 40%;
+  }
 }
+
 .thirdWord {
-  font-family: "Fruktur";
+  font-family: "Merriweather", sans-serif;
   font-weight: 900;
   font-size: 96px;
   line-height: 117px;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px $textColor;
+  @include laptop {
+    font-size: 96px;
+    line-height: 96px;
+  }
 }
+
 .thirdWord:hover {
   color: #ffc700;
 }
