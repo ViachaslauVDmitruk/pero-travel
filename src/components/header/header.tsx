@@ -19,16 +19,9 @@ export const Header = () => {
 
   return (
     <div className={styles.header}>
-      {/* <div className={styles.fullScreen}>
-        <img src={mainImage} alt="main" />
-      </div> */}
       <div className={styles.wrapper}>
         <div className={styles.fullScreen}>
-          {window.screen.width >= 992 ? (
-            <img src={mainImage} alt="main" />
-          ) : (
-            <img src={mainLaptope} alt="main" />
-          )}
+          <img src={mainImage} alt="main" />
         </div>
         <HeaderTop />
         <div className={styles.centerBlock}>

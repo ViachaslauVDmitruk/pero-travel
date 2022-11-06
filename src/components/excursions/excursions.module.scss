@@ -21,24 +21,17 @@
   flex-wrap: wrap;
 }
 
-.item {
-  flex: 0 1 50%;
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.image {
-  margin-right: 10px;
-}
-
-.content {
-  margin-left: 10px;
-}
-
-.itemTitle {
-  color: $titleColor;
+.bottomText {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 10px;
+  text-align: center;
+  color: #282828;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
 }

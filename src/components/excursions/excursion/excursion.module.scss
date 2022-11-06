@@ -9,6 +9,9 @@
   flex: 0 1 50%;
   display: flex;
   margin-bottom: 40px;
+  @include tablets {
+    flex: 1 1 100%;
+  }
 }
 
 .image {
@@ -25,4 +28,15 @@
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 10px;
+}
+
+.itemText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+  @include phones {
+    font-size: 13px;
+    line-height: 14px;
+  }
 }

@@ -51,6 +51,10 @@
     font-size: 48px;
     line-height: 58px;
   }
+  @include tablets {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
 .secondWord {
@@ -80,6 +84,10 @@
   @include laptop {
     font-size: 96px;
     line-height: 96px;
+  }
+  @include tablets {
+    font-size: 72px;
+    line-height: 90%;
   }
 }
 
