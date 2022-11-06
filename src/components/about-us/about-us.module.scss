@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.about {
+  display: flex;
+}
+.image {
+  flex: 1 1 auto;
+  img {
+    display: block;
+    max-width: 1071px;
+  }
+}
+
+.text {
+  display: flex;
+  background: #ededed;
+  border-radius: 10px;
+  flex: 1 1 auto;
+}
+
+.title {
+}
+
+.contentText {
+}
