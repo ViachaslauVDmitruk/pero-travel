@@ -1,0 +1,28 @@
+@import "../../../App.scss";
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 0 1 50%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+.itemTitle {
+  color: $titleColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}

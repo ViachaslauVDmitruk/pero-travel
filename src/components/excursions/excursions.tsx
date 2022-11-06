@@ -1,7 +1,8 @@
-import img01 from "./assets/icons/1.svg";
-import img02 from "./assets/icons/2.svg";
-import img03 from "./assets/icons/3.svg";
-import img04 from "./assets/icons/4.svg";
+// import img01 from "./assets/icons/1.svg";
+// import img02 from "./assets/icons/2.svg";
+// import img03 from "./assets/icons/3.svg";
+// import img04 from "./assets/icons/4.svg";
+import { Excursion } from "./excursion/excursion";
 
 import styles from "./excursions.module.scss";
 
@@ -11,7 +12,7 @@ export const Excursions = () => {
       <div className={styles.box}>
         <div className={styles.title}>Виды экскурсий</div>
         <div className={styles.items}>
-          <div className={styles.item}>
+          {/* <div className={styles.item}>
             <div className={styles.image}>
               <img src={img01} alt="img" />
             </div>
@@ -68,7 +69,8 @@ export const Excursions = () => {
                 лодок или иных плавсредств.
               </div>
             </div>
-          </div>
+          </div> */}
+          <Excursion />
         </div>
       </div>
     </div>
