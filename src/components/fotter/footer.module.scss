@@ -1,0 +1,92 @@
+@import "../../App.scss";
+
+.footer {
+  background-color: #ededed;
+}
+
+.wrapper {
+  @include wrapper();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  @media screen and (max-width: 650px) {
+    flex: 1 1 100%;
+  }
+}
+
+.navLinks {
+  ul li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    @include tablets() {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.messangersItems {
+  .messangersItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.messangersItem {
+  display: flex;
+}
+
+.itemImage {
+  margin-right: 10px;
+  img {
+    display: block;
+  }
+}
+
+.itemNumber {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  @include tablets() {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.social {
+}
+
+.mail {
+  display: flex;
+  margin-bottom: 20px;
+  a {
+    display: block;
+    @include tablets() {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.mailImage {
+  margin-right: 10px;
+  img {
+    display: block;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  .icon:not(:last-child) {
+    margin-right: 12px;
+  }
+}
