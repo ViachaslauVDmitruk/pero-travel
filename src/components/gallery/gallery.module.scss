@@ -1,0 +1,190 @@
+@import "../../App.scss";
+
+.gallery {
+  max-width: 1410px;
+  margin: 0 auto;
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  @include wrapper();
+}
+
+.galleryTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  @include laptop() {
+    margin-bottom: 50px;
+  }
+}
+
+.title {
+  color: $titleColor;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.viewAll {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $titleColor;
+  }
+}
+
+.flexBox {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  @include laptop() {
+    gap: 10px;
+  }
+}
+
+.boxFirst {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 1 36.75%;
+  @include laptop() {
+    display: none;
+  }
+}
+
+.topFirst {
+  position: relative;
+  padding: 0 0 55.556% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.bottomFirst {
+  display: flex;
+  flex: 0 1 auto;
+  gap: 20px;
+}
+
+.bottomLeft {
+  flex: 0 1 44.119%;
+  position: relative;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.bottomRight {
+  flex: 0 1 55.88%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include laptop() {
+    gap: 10px;
+  }
+}
+.topImage {
+  flex: 0 1 50%;
+  position: relative;
+  padding: 0 0 46.59% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.bottomImage {
+  flex: 0 1 50%;
+}
+
+.boxSecond {
+  flex: 0 1 26.397%;
+  position: relative;
+  padding: 0 0 40.213% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  @include laptop() {
+    flex: 0 1 40%;
+  }
+}
+
+.boxThird {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 36.75%;
+  gap: 20px;
+  @include laptop() {
+    flex: 0 1 60%;
+    gap: 10px;
+  }
+}
+
+.topThird {
+  display: flex;
+  flex: 0 1 auto;
+  gap: 20px;
+  @include laptop() {
+    gap: 10px;
+  }
+}
+
+.topRigth {
+  flex: 0 1 52.95%;
+  position: relative;
+  padding: 0 0 54% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.topLeft {
+  flex: 0 1 47.05%;
+}
+
+.bottomThird {
+  position: relative;
+  padding: 0 0 55.556% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
