@@ -11,7 +11,7 @@ export const Button = ({
   return (
     <button className={styles.button}>
       {buttonText}
-      <img src={src} alt="img" />
+      {src && <img src={src} alt="img" />}
     </button>
   );
 };

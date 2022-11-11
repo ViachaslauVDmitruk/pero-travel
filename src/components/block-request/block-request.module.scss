@@ -1,0 +1,85 @@
+@import "../../App.scss";
+
+.blockRequest {
+  // display: flex;
+  position: relative;
+}
+
+.backgroundImage {
+  position: relative;
+  padding: 0 0 44.445% 0;
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    @include phones() {
+      height: 928px;
+    }
+  }
+  @include tablets() {
+    // height: 640px;
+    padding: 0 0 83.335% 0;
+  }
+}
+
+.boxForm {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 105px 0px 95px;
+  @include tablets() {
+    left: 40%;
+    padding: 0px 40px;
+  }
+  @include phones() {
+    top: 10px;
+    height: auto;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.wrapperForm {
+  // margin-top: 135px;
+  // margin-bottom: 135px;
+}
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  // margin-top: 135px;
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffc700;
+  }
+}
+
+.inputItems {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 45px;
+  @include phones() {
+  }
+  .inputItem:not(:last-child) {
+    margin-bottom: 45px;
+  }
+  .inputItem:last-child {
+    margin-bottom: 80px;
+  }
+}
