@@ -1,3 +1,4 @@
+import { TopTitleView } from "../top-title-veiw";
 import img01 from "./asstes/1.jpg";
 import img02 from "./asstes/2.jpg";
 import img03 from "./asstes/3.jpg";
@@ -13,10 +14,7 @@ export const Gallery = () => {
   return (
     <div className={styles.gallery}>
       <div className={styles.wrapper}>
-        <div className={styles.galleryTop}>
-          <div className={styles.title}>Галерея</div>
-          <div className={styles.viewAll}>Смотреть все</div>
-        </div>
+        <TopTitleView title="Галерея" />
       </div>
       <div className={styles.flexBox}>
         <div className={styles.boxFirst}>

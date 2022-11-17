@@ -1,0 +1,113 @@
+@import "../../App.scss";
+
+.sliderExcursions {
+  margin-top: 150px;
+}
+
+.wrapper {
+  @include wrapper();
+}
+
+.boxSwiper {
+  margin-left: 10%;
+}
+.swiperItem {
+  position: relative;
+  color: $textColor;
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 40px 15px;
+}
+
+.tour {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffc700;
+  margin-bottom: 10px;
+}
+
+.costDuration {
+  display: flex;
+}
+
+.duration {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.cost {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  img {
+    display: block;
+    height: 15px;
+  }
+}
+
+.discription {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 35px;
+}
+
+.image {
+  img {
+    display: block;
+    height: 12px;
+  }
+}
+
+.text {
+  margin-left: 4px;
+}
+
+.swiperNavigation {
+  display: flex;
+  align-items: center;
+}
+
+.arrows {
+  margin-top: 40px;
+  height: 55px;
+  display: flex;
+  width: 85px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiperButtonPrev {
+  img {
+    display: block;
+  }
+}
+
+.swiperButtonNext {
+  img {
+    display: block;
+  }
+}

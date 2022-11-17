@@ -1,25 +1,48 @@
 @import "../../App.scss";
 
 .about {
-  display: flex;
+  position: relative;
+  margin-top: 150px;
 }
+
+.wrapper {
+  @include wrapper();
+  display: flex;
+
+  align-items: flex-end;
+}
+
 .image {
-  flex: 1 1 auto;
+  position: relative;
+  padding: 0 0 52.014% 0;
   img {
     display: block;
+    position: absolute;
     max-width: 1071px;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }
 
 .text {
-  display: flex;
+  position: absolute;
+  top: 50%;
   background: #ededed;
   border-radius: 10px;
-  flex: 1 1 auto;
+
+  padding: 60px 75px 105px 85px;
+  max-width: 540px;
 }
 
 .title {
+  color: $titleColor;
+  margin-bottom: 40px;
 }
 
 .contentText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
 }
