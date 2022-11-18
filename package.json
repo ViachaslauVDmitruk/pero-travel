@@ -2,7 +2,7 @@
   "name": "pero-travel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ViachaslauVDmitruk/pero-travel",
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
