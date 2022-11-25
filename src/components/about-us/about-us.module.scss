@@ -5,8 +5,8 @@
   margin-top: 150px;
 }
 
-.wrapper {
-  @include wrapper();
+.container {
+  @include container();
   display: flex;
 
   align-items: flex-end;

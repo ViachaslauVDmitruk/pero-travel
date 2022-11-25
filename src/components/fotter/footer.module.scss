@@ -6,8 +6,8 @@
   padding-bottom: 25px;
 }
 
-.wrapper {
-  @include wrapper();
+.container {
+  @include container();
   display: flex;
   justify-content: space-between;
   align-items: center;

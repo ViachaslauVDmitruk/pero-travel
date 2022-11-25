@@ -11,8 +11,8 @@ import { NAV_LINKS } from "../../constans/header-nav-links";
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>
-      <div className={styles.wrapper}>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
         <div className={styles.logo}>
           <img src={logo} alt="img" />
         </div>
@@ -63,6 +63,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

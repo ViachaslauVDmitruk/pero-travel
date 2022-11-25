@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat";
   border: none;
   min-height: 100vh;
+  height: 100%;
 }
 
 ul,
@@ -43,6 +44,12 @@ $direction: 92.71deg;
 
 $fromColor: #0499dd 0%;
 $toColor: #17c1bc 100%;
+
+@mixin container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 @mixin gradient() {
   $direction: 92.71deg;

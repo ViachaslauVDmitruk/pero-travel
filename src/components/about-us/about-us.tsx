@@ -7,7 +7,7 @@ export const AboutUs = () => {
       <div className={styles.image}>
         <img src={image} alt="img" />
       </div>
-      <div className={styles.wrapper}>
+      <div className={styles.container}>
         <div className={styles.text}>
           <div className={styles.title}>О нас</div>
           <div className={styles.contentText}>
