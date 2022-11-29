@@ -11,14 +11,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 650px) {
-    flex-direction: column;
+  @include laptop {
+    flex-wrap: wrap;
   }
 }
 
 .logo {
-  @media screen and (max-width: 650px) {
+  @include laptop {
+    flex: 1 1 50%;
+  }
+  @include phones {
     flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -36,11 +42,22 @@
   ul li:not(:last-child) {
     margin-bottom: 10px;
   }
+  @include laptop {
+    flex: 1 1 50%;
+    order: 3;
+  }
 }
 
 .messangersItems {
   .messangersItem:not(:last-child) {
     margin-bottom: 10px;
+  }
+  @include laptop {
+    flex: 1 1 50%;
+    order: 2;
+  }
+  @include phones {
+    order: 4;
   }
 }
 .messangersItem {
@@ -65,6 +82,18 @@
 }
 
 .social {
+  display: flex;
+  flex-direction: column;
+  @include laptop {
+    flex: 1 1 50%;
+    order: 4;
+  }
+  @include phones {
+    flex: 1 1 100%;
+    order: 2;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .mail {

@@ -41,7 +41,15 @@
 .title {
   color: $textColor;
   position: relative;
-  text-align: left;
+  // text-align: left;
+  display: flex;
+  flex-direction: column;
+  @include laptop {
+    max-width: 460px;
+  }
+  @include tablets {
+    max-width: 360px;
+  }
 }
 
 .firstWord {
@@ -56,6 +64,7 @@
   @include tablets {
     font-size: 36px;
     line-height: 44px;
+    margin-bottom: 15px;
   }
 }
 
@@ -64,14 +73,12 @@
   font-size: 64px;
   color: #ffc700;
   position: absolute;
-  right: 7%;
+  align-self: flex-end;
   top: 20%;
   @include laptop {
     font-size: 48px;
     line-height: 48px;
-  }
-  @media screen and (max-width: 845px) {
-    right: 40%;
+    top: 15%;
   }
 }
 

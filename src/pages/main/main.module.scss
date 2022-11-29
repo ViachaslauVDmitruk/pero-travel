@@ -4,16 +4,6 @@
   @include wrapper();
 }
 
-.page {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 .main {
   flex: 1 0 auto;
 }
