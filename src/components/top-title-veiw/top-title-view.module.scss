@@ -3,6 +3,7 @@
 .top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 90px;
   @include laptop() {
     margin-bottom: 50px;

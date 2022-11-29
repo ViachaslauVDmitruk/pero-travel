@@ -10,6 +10,9 @@
 
 .boxSwiper {
   margin-left: 10%;
+  @media screen and (max-width: 540px) {
+    margin: 0 10px;
+  }
 }
 .swiperItem {
   position: relative;

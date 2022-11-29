@@ -29,6 +29,32 @@ export const SliderExcursions = () => {
           // type: "bullets",
           // }
           // }
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+
+            540: {
+              slidesPerView: 1.8,
+              spaceBetween: 15,
+            },
+
+            680: {
+              slidesPerView: 2.1,
+              spaceBetween: 20,
+            },
+
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 25,
+            },
+
+            1060: {
+              slidesPerView: 3.3,
+              spaceBetween: 30,
+            },
+          }}
           navigation={{
             nextEl: ".button-next",
             prevEl: ".button-prev",
