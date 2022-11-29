@@ -13,7 +13,7 @@ import styles from "./gallery.module.scss";
 export const Gallery = () => {
   return (
     <div className={styles.gallery}>
-      <div className={styles.wrapper}>
+      <div className={styles.container}>
         <TopTitleView title="Галерея" />
       </div>
       <div className={styles.flexBox}>

@@ -16,7 +16,7 @@ import { Button } from "../button";
 export const SliderExcursions = () => {
   return (
     <div className={styles.sliderExcursions}>
-      <div className={styles.wrapper}>
+      <div className={styles.container}>
         <TopTitleView title="Популярные эскурсии" />
       </div>
       <div className={styles.boxSwiper}>
@@ -64,18 +64,12 @@ export const SliderExcursions = () => {
           ))}
         </Swiper>
       </div>
-      <div className={styles.wrapper}>
+      <div className={styles.container}>
         <div className={styles.swiperNavigation}>
           <div className={styles.arrows}>
             <div className="button-prev"></div>
             <div className="button-next"></div>
           </div>
-          {/* <div className="swiper-progressbar">
-            <span className="swiper-progressbar-fill"></span>
-          </div> */}
-          {/* <div className="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
-            <span className="swiper-pagination-progressbar-fill"></span>
-          </div> */}
         </div>
       </div>
     </div>

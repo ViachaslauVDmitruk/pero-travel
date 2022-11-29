@@ -10,14 +10,16 @@ import styles from "./main.module.scss";
 export const Main = () => {
   return (
     <div className={styles.wrapper}>
+      {/* <div className={styles.page}> */}
       <Header />
       <main className={styles.main}>
-        <SliderExcursions />
-        <AboutUs />
-        <Excursions />
-        <Gallery />
+        {/* <SliderExcursions /> */}
+        {/* <AboutUs /> */}
+        {/* <Excursions /> */}
+        {/* <Gallery /> */}
       </main>
       <Footer />
+      {/* </div> */}
     </div>
   );
 };

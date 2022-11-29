@@ -31,8 +31,6 @@ button {
   cursor: pointer;
 }
 
-$wrapper: 1140px;
-
 $font-family-main: "Montserrat";
 $font-family-rearly: "Caveat";
 $font-family-among: "Fru";
@@ -59,9 +57,9 @@ $toColor: #17c1bc 100%;
 }
 
 @mixin wrapper() {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0px 15px 0px 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin desktop {

@@ -11,8 +11,8 @@
   }
 }
 
-.wrapper {
-  @include wrapper();
+.container {
+  @include container();
 }
 
 .galleryTop {
