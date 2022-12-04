@@ -1,52 +1,37 @@
 @import "../../App.scss";
 
 .blockRequest {
-  // display: flex;
-  position: relative;
 }
 
 .backgroundImage {
-  position: relative;
-  padding: 0 0 44.445% 0;
-  img {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-
-    @include phones() {
-      height: 928px;
-    }
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 66.5vh;
+  display: flex;
+  flex-direction: row-reverse;
   @include tablets() {
-    // height: 640px;
-    padding: 0 0 83.335% 0;
+    min-height: 52vh;
+  }
+  @include phones() {
+    padding: 25px 25px 25px;
   }
 }
 
 .boxForm {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 100%;
+  flex: 1 1 auto;
+  max-width: 560px;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 105px 0px 95px;
+  margin-right: 160px;
   @include tablets() {
-    left: 40%;
     padding: 0px 40px;
   }
   @include phones() {
-    top: 10px;
-    height: auto;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
+    margin: 0;
   }
 }
 
@@ -66,19 +51,40 @@
     color: #ffc700;
   }
 }
-
 .inputItems {
+  margin-bottom: 80px;
+  margin-top: 45px;
+}
+
+.inputItem {
   color: #ffffff;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  margin-top: 45px;
+
+  margin-bottom: 80px;
+  &::placeholder {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  // &:focus {
+  //   color: red;
+  //   border: none;
+  // }
+
   @include phones() {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
   }
   .inputItem:not(:last-child) {
     margin-bottom: 45px;
-  }
-  .inputItem:last-child {
-    margin-bottom: 80px;
   }
 }

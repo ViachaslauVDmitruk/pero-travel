@@ -1,4 +1,5 @@
 import { AboutUs } from "../../components/about-us";
+import { BlockRequest } from "../../components/block-request";
 import { Excursions } from "../../components/excursions";
 import { Footer } from "../../components/fotter";
 import { Gallery } from "../../components/gallery";
@@ -16,6 +17,7 @@ export const Main = () => {
         <AboutUs />
         <Excursions />
         <Gallery />
+        <BlockRequest />
       </main>
       <Footer />
     </div>
