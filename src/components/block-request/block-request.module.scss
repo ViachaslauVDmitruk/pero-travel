@@ -36,8 +36,6 @@
 }
 
 .wrapperForm {
-  // margin-top: 135px;
-  // margin-bottom: 135px;
 }
 .title {
   font-weight: 700;
@@ -74,11 +72,6 @@
     font-size: 12px;
     line-height: 15px;
   }
-  // &:focus {
-  //   color: red;
-  //   border: none;
-  // }
-
   @include phones() {
     &:not(:last-child) {
       margin-bottom: 35px;
