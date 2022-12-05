@@ -15,9 +15,9 @@ export const Main = () => {
       <main className={styles.main}>
         <SliderExcursions />
         <AboutUs />
-        <Excursions />
-        <Gallery />
-        <BlockRequest />
+        {/* <Excursions /> */}
+        {/* <Gallery /> */}
+        {/* <BlockRequest /> */}
       </main>
       <Footer />
     </div>
