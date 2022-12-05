@@ -22,6 +22,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include phones {
+    max-width: 85%;
+  }
 }
 
 .text {
@@ -34,8 +37,8 @@
     margin-right: -100px;
   }
   @include phones {
-    max-width: 330px;
-    margin-right: -90px;
+    max-width: 310px;
+    margin-right: -50px;
   }
 }
 
@@ -68,7 +71,7 @@
   line-height: 17px;
   color: #282828;
   @include phones {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 11px;
+    line-height: 15px;
   }
 }
