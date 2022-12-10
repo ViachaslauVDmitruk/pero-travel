@@ -1,0 +1,78 @@
+@import "../../App.scss";
+
+.wrapper {
+  @include wrapper();
+}
+
+.container {
+  @include container();
+}
+.main {
+  @include main();
+}
+
+.typeTour {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.typeBlock {
+  margin-bottom: 70px;
+}
+
+.typeItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.typeItem {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  &:hover {
+    color: $titleColor;
+  }
+}
+
+.inputItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & li:not(:last-child) {
+    height: 50px;
+    margin-right: 40px;
+  }
+}
+
+.inputItem {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  flex: 1 1 25%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  & input[type~="select"] {
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    font-family: $font-family-main;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+  & input:focus {
+    border: none;
+  }
+}
