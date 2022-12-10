@@ -6,8 +6,8 @@ import { Excursions } from "./pages/excursions";
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
-      <Excursions />
+      <Main />
+      {/* <Excursions /> */}
     </div>
   );
 }
