@@ -1,13 +1,15 @@
 import { Main } from "./pages/main";
-
+import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import { Excursions } from "./pages/excursions";
 
 function App() {
   return (
     <div className="App">
-      <Main />
-      {/* <Excursions /> */}
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/excursions" element={<Excursions />} />
+      </Routes>
     </div>
   );
 }

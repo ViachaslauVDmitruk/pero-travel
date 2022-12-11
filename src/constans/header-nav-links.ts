@@ -1,14 +1,17 @@
 export const NAV_LINKS = [
     {
         id: 1,
-        link: 'Главная',
+        link: '',
+        text: 'Главная'
     },
     {
         id: 2,
-        link: 'Экскурсия',
+        link: 'excursions',
+        text: 'Экскурсии',
     },
     {
         id: 3,
-        link: 'Личный кабинет',
+        link: '',
+        text: 'Личный кабинет',
     },
 ];

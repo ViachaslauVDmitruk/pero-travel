@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap");
 
+$font-family-main: "Montserrat";
+$font-family-rearly: "Caveat";
+$font-family-among: "Fru";
+
+$titleColor: #0499dd;
+$textColor: #ffffff;
+
+$direction: 92.71deg;
+
+$fromColor: #0499dd 0%;
+$toColor: #17c1bc 100%;
+
 body {
   margin: 0;
   padding: 0;
@@ -20,8 +32,15 @@ li {
 }
 
 a {
-  color: #282828;
+  color: $textColor;
+  text-decoration: none;
 }
+a.text:active,
+a.text:hover,
+a.text {
+  text-decoration: none;
+}
+
 .App {
 }
 
@@ -33,18 +52,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-$font-family-main: "Montserrat";
-$font-family-rearly: "Caveat";
-$font-family-among: "Fru";
-
-$titleColor: #0499dd;
-$textColor: #ffffff;
-
-$direction: 92.71deg;
-
-$fromColor: #0499dd 0%;
-$toColor: #17c1bc 100%;
 
 @mixin container {
   max-width: 1150px;
