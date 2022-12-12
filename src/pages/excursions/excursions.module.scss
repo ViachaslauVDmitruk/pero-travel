@@ -3,3 +3,11 @@
 .excursions {
   width: 100%;
 }
+
+.container {
+  @include container();
+}
+
+.content {
+  display: flex;
+}
