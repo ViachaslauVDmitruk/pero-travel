@@ -53,6 +53,12 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}
+
 @mixin container {
   max-width: 1150px;
   padding: 0 15px;
