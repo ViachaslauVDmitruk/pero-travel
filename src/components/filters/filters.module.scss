@@ -26,3 +26,8 @@
   line-height: 17px;
   color: #282828;
 }
+
+@mixin itemFilter() {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 40px;
+}

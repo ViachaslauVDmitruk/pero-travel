@@ -18,8 +18,8 @@ export const Footer = () => {
         </div>
         <div className={styles.navLinks}>
           <ul>
-            {NAV_LINKS.map(({ link, id }) => (
-              <li key={id}>{link}</li>
+            {NAV_LINKS.map(({ id, text }) => (
+              <li key={id}>{text}</li>
             ))}
           </ul>
         </div>

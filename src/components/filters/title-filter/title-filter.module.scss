@@ -1,0 +1,18 @@
+.blockFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttonList {
+  height: 14px;
+  width: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & img {
+    display: block;
+    width: 100%;
+  }
+}
