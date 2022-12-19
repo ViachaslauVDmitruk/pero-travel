@@ -41,6 +41,12 @@ a.text {
   text-decoration: none;
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 .App {
 }
 
