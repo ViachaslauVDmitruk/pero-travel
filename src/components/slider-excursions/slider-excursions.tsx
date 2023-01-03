@@ -23,12 +23,6 @@ export const SliderExcursions = () => {
         <Swiper
           spaceBetween={30}
           slidesPerView={3.3}
-          // pagination={
-          // {
-          // el: "swiper-progressbar",
-          // type: "bullets",
-          // }
-          // }
           breakpoints={{
             320: {
               slidesPerView: 1,

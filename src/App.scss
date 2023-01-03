@@ -32,7 +32,7 @@ li {
 }
 
 a {
-  color: $textColor;
+  color: #ffffff;
   text-decoration: none;
 }
 a.text:active,
@@ -63,6 +63,10 @@ input,
 textarea,
 select {
   -webkit-appearance: none;
+}
+
+img {
+  display: block;
 }
 
 @mixin container {

@@ -6,8 +6,6 @@ import styles from "./excursions.module.scss";
 
 export const Excursions = () => {
   return (
-    // <div className={styles.wrapper}>
-
     <div className={styles.box}>
       <div className={styles.container}>
         <div className={styles.title}>Виды экскурсий</div>
