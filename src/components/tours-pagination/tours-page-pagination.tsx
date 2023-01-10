@@ -21,11 +21,13 @@ export const ToursPagePagination = ({
   return (
     <ul className={styles.pagination}>
       <Button src={prev} />
-      {pageNumbers.map((item, i) => (
-        <li key={i} onClick={() => paginate(item)}>
-          {item}
-        </li>
-      ))}
+      <div className={styles.numbers}>
+        {pageNumbers.map((item, i) => (
+          <li key={i} className={styles.number} onClick={() => paginate(item)}>
+            {item}
+          </li>
+        ))}
+      </div>
       <Button src={next} />
     </ul>
   );

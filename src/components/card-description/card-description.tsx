@@ -1,5 +1,3 @@
-import favoritesActive from "./assets/favorites-active.png";
-import favoritesDisable from "./assets/favorites-disable.png";
 import iconClock from "./assets/clock.png";
 import iconCost from "./assets/cost.png";
 
@@ -9,6 +7,7 @@ import { ToursProps } from "../../types/tours";
 import { TOURS } from "../../constans/tours";
 import { useState } from "react";
 import { ToursPagePagination } from "../tours-pagination";
+import { LikeButton } from "../like-button";
 
 export const CardDescription = ({
   title,
@@ -70,9 +69,7 @@ export const CardDescription = ({
               <div className={styles.textContent}>{text}</div>
               <div className={styles.buttons}>
                 <Button buttonText="Подробнее" />
-                <div className={styles.like}>
-                  <img src={favoritesDisable} alt="img" />
-                </div>
+                <LikeButton />
               </div>
             </div>
           </div>

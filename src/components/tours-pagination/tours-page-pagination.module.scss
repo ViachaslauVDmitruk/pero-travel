@@ -1,5 +1,27 @@
+@import "../../App.scss";
+
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  & :hover {
+    color: $titleColor;
+    cursor: pointer;
+  }
+}
+
+.numbers {
+  display: flex;
+  & .number:not(:last-child) {
+    margin-right: 12px;
+  }
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
 }
