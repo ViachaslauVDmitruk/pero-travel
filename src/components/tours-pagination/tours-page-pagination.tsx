@@ -20,7 +20,10 @@ export const ToursPagePagination = ({
 
   return (
     <ul className={styles.pagination}>
-      <Button src={prev} />
+      {/* <button src={prev} /> */}
+      <button className={styles.button}>
+        <img src={prev} alt="img" />
+      </button>
       <div className={styles.numbers}>
         {pageNumbers.map((item, i) => (
           <li key={i} className={styles.number} onClick={() => paginate(item)}>
@@ -28,7 +31,10 @@ export const ToursPagePagination = ({
           </li>
         ))}
       </div>
-      <Button src={next} />
+      <button className={styles.button}>
+        <img src={next} alt="img" />
+      </button>
+      {/* <Button src={next} /> */}
     </ul>
   );
 };
