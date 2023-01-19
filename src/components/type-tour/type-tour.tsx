@@ -13,8 +13,8 @@ export const TypeTour = () => {
         <div className={styles.typeBlock}>
           <ul className={styles.typeItems}>
             {EXCURSIONS_PROPS.map(({ title, id }) => (
-              <li key={id}>
-                <div className={styles.typeItem}>{title}</div>
+              <li key={id} className={styles.typeItem}>
+                {title}
               </li>
             ))}
           </ul>
