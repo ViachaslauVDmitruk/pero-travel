@@ -17,7 +17,7 @@ export const Excursions = () => {
           записывайтесь онлайн без очередей, просто и быстро!
         </div>
         <div className={styles.button}>
-          <Button buttonText="К экскурсиям" src={arrow} />
+          <Button buttonText="К экскурсиям" src={arrow} type="button" />
         </div>
       </div>
     </div>

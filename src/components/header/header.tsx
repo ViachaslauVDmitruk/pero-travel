@@ -44,7 +44,9 @@ export const Header = ({
               </div>
             </div>
           )}
-          {mainPage && <Button buttonText="К экскурсиям" src={arrow} />}
+          {mainPage && (
+            <Button buttonText="К экскурсиям" src={arrow} type="button" />
+          )}
           {excursionsPage && (
             <div className={styles.centerBlock}>
               <div className={styles.title}>

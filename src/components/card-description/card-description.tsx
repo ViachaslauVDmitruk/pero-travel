@@ -68,7 +68,7 @@ export const CardDescription = ({
               </div>
               <div className={styles.textContent}>{text}</div>
               <div className={styles.buttons}>
-                <Button buttonText="Подробнее" />
+                <Button buttonText="Подробнее" type="button" />
                 <LikeButton />
               </div>
             </div>

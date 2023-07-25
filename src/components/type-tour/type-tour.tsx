@@ -41,7 +41,11 @@ export const TypeTour = () => {
               />
             </li>
             <li className={styles.inputItem}>
-              <Button buttonText="Показать" />
+              <Button
+                buttonText="Показать"
+                type="button"
+                passStyle={styles.buttonStyle}
+              />
             </li>
           </ul>
         </div>

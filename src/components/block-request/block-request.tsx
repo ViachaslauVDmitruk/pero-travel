@@ -36,7 +36,7 @@ export const BlockRequest = () => {
                 className={styles.inputItem}
               />
             </div>
-            <Button buttonText="Оставить заявку" />
+            <Button buttonText="Оставить заявку" type="submit" />
           </div>
         </div>
       </div>

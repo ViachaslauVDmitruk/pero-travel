@@ -77,7 +77,7 @@ export const SliderExcursions = () => {
                     </div>
                   </div>
                   <div className={styles.discription}>{item.discription}</div>
-                  <Button buttonText="Подробнее" />
+                  <Button buttonText="Подробнее" type="button" />
                 </div>
               </div>
             </SwiperSlide>
